@@ -20,12 +20,12 @@ header {
     height: 32px;
 }
 
-#lang {
+#sign-in {
     border-style: solid;
-    border-radius: 1rem;
-    border-color: black;
+    
 }
 
 #nav-menu {
     display: flex;
+    height: 50px;
 }
