@@ -7,25 +7,114 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 header {
-    margin: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    height: 82.8vh;
+    background-image: url("netflex-bg.jpg");
+    background-size: 1150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#top-sec {
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+nav {
+    margin: 25px;
     display: flex;
     justify-content: space-between;
-    font-size: 1.8rem;
+    align-items: center;
+    text-align: center;
+    height: 50px;
 }
 
 #logo {
     height: 32px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 #sign-in {
-    border-style: solid;
-    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    border-radius: 5px;
+    background-color: #E50914;
+    display: inline-block;
+    text-align: center;
+    padding: 9px 18px;
+    height: 32px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#sign-in:hover {
+    background-color: #C11119;
 }
 
 #nav-menu {
     display: flex;
     height: 50px;
+    gap: 10px;
+    margin-top: 28px;
+    margin-right: 8px;
+}
+
+
+.lang {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    display: flex;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: gray;
+    padding: 6px 10px;
+    height: 32px;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.lang-list {
+    display: flex;
+    gap: 7px;
+}
+
+.lang ul {
+    list-style: none;
+    text-align: left;
+}
+
+.lang-1 {
+    display: none;
+}
+
+.lang ul li a {
+    text-decoration: none;
+}
+
+#sec-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text-1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
