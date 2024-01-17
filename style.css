@@ -28,7 +28,7 @@ header {
 
 #head-1 {
     height: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.829) 0, rgba(0, 0, 0, 0.466) 60%, rgba(0, 0, 0, 0.87) 100%);
     width: 100%;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 nav {
-    margin: 25px;
+    margin: 13px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,6 @@ nav {
 #logo {
     height: 32px;
     width: 100px;
-    margin-top: 10px;
     pointer-events: none;
 }
 
@@ -100,6 +99,7 @@ nav {
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #text-1 {
@@ -178,4 +178,148 @@ nav {
 
 .lang-2 {
     color: black;
+}
+
+.input_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.email-add {
+    padding: 20px 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 55px;
+    width: 320px;
+}
+
+.submit-email {
+    padding: 15px;
+    background-color: #E50914;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 500;
+    height: 55px;
+    width: 200px;
+    transition: .3s;
+}
+
+.submit-email:hover {
+    background-color: #C11119;
+    cursor: pointer;
+}
+
+hr {
+    height: 8px;
+    width: 100%;
+    background-color: #232323;
+    border: none;
+}
+
+#sec-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 24px;
+}
+
+#sec-2 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#sec-2 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#sec-3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 24px;   
+}
+
+#sec-3 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#sec-3 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#sec-4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 24px;   
+}
+
+#sec-4 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#sec-4 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#sec-5 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 24px;   
+}
+
+#sec-5 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#sec-5 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#sec-6 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 24px;   
+}
+
+#sec-6 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#sec-6 p {
+    font-size: 18px;
+    font-weight: 400;
 }
