@@ -323,3 +323,39 @@ hr {
     font-size: 18px;
     font-weight: 400;
 }
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq_child {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button_faq {
+    background-color: #2D2D2D;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.button_faq:hover {
+    background-color: #414141;
+}
+
+.faq_text {
+    background-color: #2D2D2D;
+    display: flex;
+    text-align: start;
+}
