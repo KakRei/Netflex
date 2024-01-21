@@ -305,13 +305,14 @@ hr {
 }
 
 #sec-6 {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 50px 24px;   
+    margin: 50px 24px;
+    gap: 20px;
 }
 
 #sec-6 h2 {
@@ -328,6 +329,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 98%;
 }
 
 .faq_child {
@@ -337,6 +339,7 @@ hr {
     gap: 1px;
     font-size: 18px;
     font-weight: 400;
+    transition: .3 ease;
 }
 
 .button_faq {
@@ -348,6 +351,27 @@ hr {
     font-weight: 400;
     display: flex;
     align-items: center;
+    padding: 25px;
+    /* position: absolute; */
+}
+
+.x_icon {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.x_icon:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+}
+
+
+.x_icon::after {
+    content: '';
+    width: 10px;
+    height: 10px;
 }
 
 .button_faq:hover {
@@ -356,6 +380,24 @@ hr {
 
 .faq_text {
     background-color: #2D2D2D;
-    display: flex;
     text-align: start;
+    padding: 25px;
+    display: none;
+    transition: .3 ease;
+}
+
+.showText {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
 }
