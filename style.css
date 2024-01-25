@@ -13,9 +13,10 @@
 
 body {
     background-color: black;
-    height: 100%;
+    width: 100%;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@ header {
     background-size: 1150px;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 #head-1 {
@@ -47,12 +49,22 @@ nav {
     height: 50px;
 }
 
+#nav-menu {
+    display: flex;
+    height: 50px;
+    gap: 10px;
+    margin-top: 28px;
+    margin-right: 8px;
+}
+
+/* Logo */
 #logo {
     height: 32px;
     width: 100px;
     pointer-events: none;
 }
 
+/* Sign In button */
 #sign-in {
     font-size: 14px;
     font-weight: 500;
@@ -71,51 +83,12 @@ nav {
     background-color: #C11119;
 }
 
-#nav-menu {
-    display: flex;
-    height: 50px;
-    gap: 10px;
-    margin-top: 28px;
-    margin-right: 8px;
-}
-
-
+/* Language selector */
 .lang {
     width: 200px;
-}
+    margin: 0;
+    padding: 0;
 
-#sec-1 {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#text-1 {
-    height: 50%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#text-1 h1 {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-#text-1 p {
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.select option {
-    display:block;
-    line-height:1.5;
-    font-size:1em;
-    border:none;
 }
 
 .langs {
@@ -157,10 +130,13 @@ nav {
 
 #select-menu {
     position: relative;
+    margin: 0;
 }
 
 .lang-list {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .lang-1 {
@@ -171,6 +147,35 @@ nav {
     color: black;
 }
 
+/* Section 1 */
+#sec-1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text-1 {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text-1 h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#text-1 p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Email form */
 .input_email {
     display: flex;
     justify-content: center;
@@ -208,6 +213,7 @@ nav {
     cursor: pointer;
 }
 
+/* Line between section */
 hr {
     height: 8px;
     width: 100%;
@@ -215,6 +221,13 @@ hr {
     border: none;
 }
 
+/* Main Section */
+main {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Section 2 */
 #sec-2 {
     height: 100vh;
     display: flex;
@@ -235,6 +248,7 @@ hr {
     font-weight: 400;
 }
 
+/* Section 3 */
 #sec-3 {
     height: 100vh;
     display: flex;
@@ -255,6 +269,7 @@ hr {
     font-weight: 400;
 }
 
+/* Section 4 */
 #sec-4 {
     height: 100vh;
     display: flex;
@@ -275,6 +290,7 @@ hr {
     font-weight: 400;
 }
 
+/* Section 5 */
 #sec-5 {
     height: 100vh;
     display: flex;
@@ -295,6 +311,7 @@ hr {
     font-weight: 400;
 }
 
+/* Section 6 */
 #sec-6 {
     height: auto;
     display: flex;
@@ -316,6 +333,7 @@ hr {
     font-weight: 400;
 }
 
+/* Section FAQ */
 #faq {
     display: flex;
     flex-direction: column;
@@ -343,26 +361,6 @@ hr {
     display: flex;
     align-items: center;
     padding: 25px;
-    /* position: absolute; */
-}
-
-.x_icon {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-
-.x_icon:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-}
-
-
-.x_icon::after {
-    content: '';
-    width: 10px;
-    height: 10px;
 }
 
 .button_faq:hover {
@@ -374,26 +372,30 @@ hr {
     text-align: start;
     padding: 25px;
     display: none;
-    transition: .3 ease;
 }
 
+/* Class for display FAQ's text */
 .showText {
     display: block;
 }
 
+/* Footer section */
 footer {
     display: flex;
     justify-content: left;
-    height: 40vh;
-
+    height: auto;
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 
 footer div {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 15px 20px;
     height: 100%;
-    gap: 15px;
+    width: 100%;
+    gap: 18px;
 }
 
 footer div p {
@@ -408,15 +410,21 @@ footer div p a {
 
 footer ul {
     list-style: none;
+    font-size: 14px;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100%;
-    flex-wrap: wrap;
-    font-size: 14px;
-    font-weight: 400;
 }
 
 footer ul li a {
     color: #BBBBBB;
+}
+
+.footLinks {
+    display: flex;
+    width: 420px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
 }
